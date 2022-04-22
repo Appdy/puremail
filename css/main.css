@@ -918,6 +918,7 @@ header nav label {
 }
 main {
   max-width: 70rem;
+  min-height: calc(100vh - 500px);
   margin: 0 auto;
   border-top: 0.5px solid #ccc;
 }
