@@ -16,10 +16,6 @@
     "clean": "rm -Rf ./_site/posts/*",
     "deploy": "rsync -crvz --delete _site/ vps2:/home/docker/nginx/www/puremail.cyou"
   },
-  "pre-push": [
-    "build"
-  ],
-  "pre-commit": [],
   "repository": {
     "type": "git",
     "url": "git://github.com/11ty/eleventy-base-blog.git"
