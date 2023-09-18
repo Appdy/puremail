@@ -13,7 +13,8 @@
     "debug": "DEBUG=* eleventy && npm run test",
     "test": "mocha test/test*.js",
     "test-watch": "mocha test/test*.js --watch --watch-files=test/*",
-    "clean": "rm -Rf ./_site/posts/*"
+    "clean": "rm -Rf ./_site/posts/*",
+    "deploy": "rsync -crvz --delete _site/ vps2:/home/docker/nginx/www/puremail.cyou"
   },
   "pre-push": [
     "build"
